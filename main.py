@@ -1,14 +1,21 @@
 import time
 
-def collatz(num):
-    while True:
+def collatz(num, level):
+    tree = ""
+    while num != 1:
         if (num % 2) == 0:
             num = num / 2
+            tree += " " * level + "|\n"
+            tree += " " * level + "v\n"
+            tree += " " * level + str(num) + "\n"
         else:
             num = num * 3 + 1
-        print(num)
-        time.sleep(.1)
-        if num == 1:
-            quit()
-#add the starting number in the function
-collatz(10)
+            tree += " " * level + "|\n"
+            tree += " " * level + "v\n"
+            tree += " " * level + str(num) + "\n"
+        level += 2
+        tree += collatz(num, level)
+    return tree
+
+tree = collatz(100, 0)
+print(tree)
