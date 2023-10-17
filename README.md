@@ -1,8 +1,4 @@
 # Solving the Collatz Conjecture.
-The Collatz Conjecture is a math promlem That has never been proved or disapproved.
-It states: Choose a random number; If it's even divide by 2,If it's odd multiply by 3 then add 1. At some point you will end up in an infinite loop; You keep doing this until you end up with 4.
-When you get to the number four you would divide it by two and then divide two by two which you'd give you one.
-Then multiply that by three and add one you go back to four and repeat the process all over.
+The Collatz Conjecture is a mathematical problem that has never been proven or disproven. The conjecture states that you should choose a random number, and if it is even, divide it by 2, but if it is odd, multiply it by 3 and add 1. You keep doing this until you end up with 4. Once you get to 4, you should divide it by 2, then divide 2 by 2, which will give you 1. From there, you should multiply that by 3 and add 1, and then repeat the process all over again. 
 
-This project is about writing some python code to try to brute force it into finding a stop where this will be proven false or continue on forever and be
-proven true.
+This project aims to write some Python code that will attempt to brute force its way into finding a stopping point where this conjecture will be proven false or continue on forever and be proven true.
